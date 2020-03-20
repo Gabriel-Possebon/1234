@@ -1,0 +1,73 @@
+	
+//Exercicio 2
+	<?php
+	class empregados{
+	  public $qnome;
+	  public $anome;
+	  public $sal_men;
+	  public $sala_nu;
+	
+
+	  public function __construct(){
+	    $this-> qnome = "Gustavo";
+	    $this-> anome = "Felipe";
+	    $this-> sal_men = 1800.00;
+	  }
+	  public function setPnome($recebe){
+	    return $this->qnome = $recebe;
+	  }
+	  public function getPnome(){
+	    return $this ->qnome;
+	  }
+	  public function setSnome($recebe1){
+	    return $this->anome = $recebe1;
+	  }
+	  public function getSnome(){
+	    return $this ->anome;
+	  }
+	  public function setSal_men($recebe2){
+	    return $this->sal_men = $recebe2;
+	  }
+	  public function getSa_lmen(){
+	    return $this ->sal_men;
+	  }
+	  public function setSal_anu(){
+	    
+	    return $this->sal_anu = $this->sal_men*12;
+	  }
+	  public function getSal_anu(){
+	    return $this ->sal_anu;
+	  }
+	  public function validaSal_men(){
+	    if($this->sal_men < 0){
+	      $this->sal_men = 0.0;
+	    }
+	  }
+	  public function aumentasal_men(){
+	    $porc = ($this->sal_men*10)/100;
+	    $this-> sal_men = $this->sal_men + $porc;
+	  }
+	}
+	//empregado 1
+	$empre1 = novos empregados();
+	$empre1->valida_Sal__men();
+	$empre1->set_Sala_nu();
+	echo "O salario anual de {$empre1-> getQnome()} {$emp1->getAnome()} é R$ {$empre1->getSala__nu()}\n"; 
+	$empre1 -> aumentasal__men();
+	$empre1->setSalan___u();
+	echo "O salario anual de {$empre1-> getQnome()} recebeu acrescimo de 10% e agora é de R$ {$empre1->getSala__nu()} \n ";
+	
+
+//empregado 2
+	$empre2 = novo empregados();
+	$empre2 -> setPnome("Junior");
+	$empre2 -> setAnome("da Silva");
+	$empre2->setSalmen(1000);
+	$empre2->validaSalmen();
+	$empre2->setSalanu();
+r	echo "O salario anual de {$empre2-> getPnome()}  {$empre2->getSnome()} é R$ {$empre2->getSalanu()} \n"; 
+	$empre2 -> aumenta__sal__men();
+	$empre2->setSala__nu();
+	echo "O salario anual de {$emp2-> getPnome()} recebeu acrescimo de 10% e agora é de R$ {$emp2->getSala__nu()} \n ";
+	?>
+	
