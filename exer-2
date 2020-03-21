@@ -1,5 +1,4 @@
-	
-//Exercicio 2
+
 	<?php
 	class empregados{
 	  public $qnome;
